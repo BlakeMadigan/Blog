@@ -1,0 +1,61 @@
+[
+  {
+    "metadata": {
+      "title": "How To Post 1 Better",
+      "id": "1",
+      "date": {
+        "@type": "Date",
+        "value": "2024-03-25T00:00:00.000Z"
+      }
+    },
+    "contentUrl": "String",
+    "comments": {
+      "user": "",
+      "comment": "",
+      "date": {
+        "@type": "Date",
+        "value": "2024-03-25T00:00:00.000Z"
+      }
+    },
+    "tags": []
+  },
+  {
+    "metadata": {
+      "title": "Certain Posting Techniques have greater yields 2",
+      "id": "2",
+      "date": {
+        "@type": "Date",
+        "value": "2024-03-25T00:00:00.000Z"
+      }
+    },
+    "contentUrl": "String",
+    "comments": {},
+    "tags": []
+  },
+  {
+    "metadata": {
+      "title": "Post 3",
+      "id": "3",
+      "date": {
+        "@type": "Date",
+        "value": "2024-03-25T00:00:00.000Z"
+      }
+    },
+    "contentUrl": "String",
+    "comments": {},
+    "tags": []
+  },
+  {
+    "metadata": {
+      "title": "Post 4",
+      "id": "4",
+      "date": {
+        "@type": "Date",
+        "value": "2024-03-25T00:00:00.000Z"
+      }
+    },
+    "contentUrl": "String",
+    "comments": {},
+    "tags": []
+  }
+]
