@@ -1,7 +1,6 @@
 import Image from "next/image";
 import profilePicture from "@/../public/profile-picture.jpg";
 import LatestPosts from "@/components/LatestPosts";
-import RecentProjects from "@/components/RecentProjects";
 import Posts from "@/data/fakepost.json";
 
 export default function Home() {
@@ -37,7 +36,7 @@ export default function Home() {
       </section>
       <section className="w-2/3 m-auto sm:w-full grid sm:grid-flow-row sm:grid-rows-2 sm:grid-cols-3 grid-cols-1 spacing">
         {/* redo this shit sections are out of wack */}
-        <LatestPosts data={Posts} />
+        <LatestPosts data={Posts} />S
       </section>
     </>
   );
