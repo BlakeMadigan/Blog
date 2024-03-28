@@ -1,6 +1,8 @@
 import Image from "next/image";
-import profilePicture from "@/../public/profile-picture.jpg";
+import profilePicture from "@/../public/images/profile-picture.jpg";
 import LatestPosts from "@/components/LatestPosts";
+import LatestProjects from "@/components/LatestProjects";
+
 import Posts from "@/data/fakepost.json";
 
 export default function Home() {
@@ -22,12 +24,15 @@ export default function Home() {
           className="w-1/2 rounded-full m-auto"
           alt="personal photo"
           src={profilePicture}
+          priority
         />
       </section>
       <section>
         <LatestPosts data={Posts} />
       </section>
-      <section></section>
+      <section className="pt-10">
+        <LatestProjects />
+      </section>
     </>
   );
 }

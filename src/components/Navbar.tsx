@@ -29,16 +29,16 @@ export default function Navbar() {
             } sm:block space-x-8 text-xl`}
             aria-label="main"
           >
-            <a href="#" className="hover:opacity-80 font-medium line-through">
+            <a href="/me" className="hover:opacity-80 font-medium">
               About
             </a>
-            <a href="#" className="hover:opacity-80 font-medium line-through">
+            <a href="/blog" className="hover:opacity-80 font-medium">
               Blog
             </a>
-            <a href="#" className="hover:opacity-80 font-medium line-through">
+            <a href="/projects" className="hover:opacity-80 font-medium">
               Projects
             </a>
-            <a href="#" className="hover:opacity-80 font-medium line-through">
+            <a href="#" className="hover:opacity-80 font-medium">
               Resume
             </a>
           </nav>
@@ -47,7 +47,7 @@ export default function Navbar() {
       <section
         id="mobile-menu"
         className={`absolute bg-slate-800 top-0 w-full flex flex-col justify-content-center text-5xl origin-top animate-open-menu ${
-          isMobileMenuOpen ? "" : "hidden"
+          isMobileMenuOpen ? "block" : "hidden"
         }`}
       >
         <button className="text-8x1 self-end px-6" onClick={toggleMenu}>
@@ -58,28 +58,28 @@ export default function Navbar() {
           aria-label="mobile"
         >
           <a
-            href="/about"
+            href="/me"
             className="w-full text-center py-6 hover:opacity-80"
             onClick={toggleMenu}
           >
             About
           </a>
           <a
-            href="#"
+            href="/blog"
             className="w-full text-center py-6 hover:opacity-80"
             onClick={toggleMenu}
           >
             Blog
           </a>
           <a
-            href="#"
+            href="/projects"
             className="w-full text-center py-6 hover:opacity-80"
             onClick={toggleMenu}
           >
             Projects
           </a>
           <a
-            href="#"
+            href="/"
             className="w-full text-center py-6 hover:opacity-80"
             onClick={toggleMenu}
           >
@@ -90,6 +90,3 @@ export default function Navbar() {
     </header>
   );
 }
-
-// get the animation working for the navbar then move onto the projects component and footer.
-// then we build a backend to deliver the posts and correct my typing
