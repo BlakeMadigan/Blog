@@ -7,7 +7,7 @@ import Posts from "@/data/fakepost.json";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <section className="flex flex-col-reverse justify-center sm:flex-row p-6 gap-8">
         <article className="w-2/3 sm:w-1/2 pt-6 m-auto">
           <h2 className="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
@@ -33,6 +33,6 @@ export default function Home() {
       <section className="pt-10">
         <LatestProjects />
       </section>
-    </>
+    </div>
   );
 }
