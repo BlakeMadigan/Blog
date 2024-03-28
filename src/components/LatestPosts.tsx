@@ -29,16 +29,26 @@ export default function LatestPosts(Posts: any) {
           </span>
         </button>
       </div>
-      <div className="w-5/6 m-auto sm:w-full grid sm:grid-flow-row sm:grid-rows-2 sm:grid-cols-3 grid-cols-1 spacing">
+      <div className="w-5/6 m-auto sm:w-full">
         {(Object.keys(data).length < 1 && <span>No Posts Yet</span>) ||
           data.map((post: any, index: any) => {
             const { metadata, contentUrl, comments, tags } = post;
             return (
               <div
-                className="p-2 text-slate-700 dark:text-slate-400 font-medium text-ellipsis overflow-hidden whitespace-nowrap"
+                className="p-2 text-slate-700 dark:text-slate-400 font-medium"
                 key={index}
               >
-                <a href="#">{metadata.title}</a>
+                <div className="flex justify-between w-full">
+                  <a
+                    className="text-ellipsis overflow-hidden whitespace-nowrap"
+                    href="#"
+                  >
+                    {metadata.title}
+                  </a>
+                  <span className="hidden sm:block text-indigo-200">
+                    {metadata.date}
+                  </span>
+                </div>
                 <hr />
               </div>
             );

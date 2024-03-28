@@ -8,15 +8,15 @@ import Posts from "@/data/fakepost.json";
 export default function Home() {
   return (
     <div>
-      <section className="flex flex-col-reverse justify-center sm:flex-row p-6 pt-10 gap-8">
-        <article className="w-5/6 sm:w-1/2 pt-6 m-auto">
-          <h2 className="w-full text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
+      <section className="flex flex-col-reverse justify-center sm:flex-row p-3 pt-10 mb-6 gap-8">
+        <article className="w-5/6 pt-6 m-auto">
+          <h2 className="w-full text-4xl font-bold sm:text-5xl sm:text-left text-slate-900 dark:text-white">
             Hi, I&apos;m Blake
           </h2>
-          <p className="w-full text-2x1 mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400 font-medium">
+          <p className="w-full text-2x1 mt-4 text-slate-700 dark:text-slate-400 font-medium">
             I&apos;m looking to start my career as a Web Developer.
           </p>
-          <p className="max-w-md text-2x1 mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400 font-medium">
+          <p className="max-w-md text-2x1 mt-4 text-slate-700 dark:text-slate-400 font-medium">
             Please enjoy exploring my page and viewing my progress.
           </p>
         </article>

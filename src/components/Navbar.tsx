@@ -58,6 +58,13 @@ export default function Navbar() {
           aria-label="mobile"
         >
           <a
+            href="/"
+            className="w-full text-center py-6 hover:opacity-80"
+            onClick={toggleMenu}
+          >
+            Home
+          </a>
+          <a
             href="/me"
             className="w-full text-center py-6 hover:opacity-80"
             onClick={toggleMenu}
