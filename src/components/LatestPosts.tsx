@@ -19,7 +19,7 @@ export default function LatestPosts(Posts: any) {
   const { data } = Posts;
   return (
     <>
-      <div className="w-2/3 sm:w-full flex flex-row justify-between p-2 pt-4 m-auto">
+      <div className="w-5/6 sm:w-full flex flex-row justify-between p-2 pt-4 m-auto">
         <h2 className="text-4xl font-bold sm:text-4xl text-slate-900 dark:text-white">
           Latest <span className="hidden sm:inline-block">Posts</span>
         </h2>
@@ -29,7 +29,7 @@ export default function LatestPosts(Posts: any) {
           </span>
         </button>
       </div>
-      <div className="w-2/3 m-auto sm:w-full grid sm:grid-flow-row sm:grid-rows-2 sm:grid-cols-3 grid-cols-1 spacing">
+      <div className="w-5/6 m-auto sm:w-full grid sm:grid-flow-row sm:grid-rows-2 sm:grid-cols-3 grid-cols-1 spacing">
         {(Object.keys(data).length < 1 && <span>No Posts Yet</span>) ||
           data.map((post: any, index: any) => {
             const { metadata, contentUrl, comments, tags } = post;
